@@ -1,9 +1,7 @@
 //dependencies
 const express = require('express')
 const router = express.Router()
-
-//import books model
-const Books = require('../models/books.js')
+const Books = require('../models/book.js')
 
 //index route
 router.get('/', async (req, res) => {
@@ -67,4 +65,4 @@ router.delete('/:id', async (req, res) => {
 })
 
 //export router
-module.exports = router
+module.exports = router;

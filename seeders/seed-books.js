@@ -1,7 +1,5 @@
 //import books model
-const Books = require("../models/books.js");
-
-//dependencies
+const Book = require("../models/book.js");
 const mongoose = require("mongoose");
 
 //config
@@ -14,7 +12,7 @@ mongoose.connect(MONGO_URI).then(() => {
 });
 
 //seed
-Books.insertMany([
+Book.insertMany([
       {
         title: "The Shinobi Initiative",
         description:
@@ -53,3 +51,4 @@ Books.insertMany([
     .catch(err => {
         console.log('Failed to create books: ', err)
     })
+ 

@@ -1,5 +1,6 @@
 //dependencies
 const mongoose = require('mongoose')
+//const { Schema } = mongoose
 
 //schema
 const bookSchema = new mongoose.Schema({
@@ -11,7 +12,7 @@ const bookSchema = new mongoose.Schema({
 })
 
 //mongoose model
-const Books = mongoose.model('Books', bookSchema)
+const Book = mongoose.model('Book', bookSchema)
 
 //export model
-module.exports = Books
+module.exports = Book
